@@ -1,0 +1,39 @@
+.hero {
+    background: url("../../assets/swiss7.jpeg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+      .cta-button {
+        background: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover {
+          background: #0056b3;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero .container h1 {
+      font-size: 32px;
+    }
+    .hero .container p {
+      font-size: 18px;
+    }
+  }
+  

@@ -1,0 +1,146 @@
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: relative;
+  
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+  
+      nav {
+        ul {
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            margin-left: 20px;
+  
+            span {
+              color: white;
+              text-decoration: none;
+              cursor: pointer;
+  
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+  
+        &.open {
+          display: block;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          background: #2c3e50;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          max-width: 200px;
+          width: 100%; 
+          margin-bottom: 20px;  /* Add margin-bottom to create space below the mobile menu */
+  
+          ul {
+            flex-direction: column;
+  
+            li {
+              margin: 10px 0;
+              text-align: right;
+  
+              span {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+  
+      .auth-buttons {
+        display: flex;
+        align-items: center;
+  
+        span {
+          margin-left: 15px;
+          padding: 5px 10px;
+          color: white;
+          background: #3498db;
+          border-radius: 5px;
+          text-decoration: none;
+          cursor: pointer;
+  
+          &:hover {
+            background: #2980b9;
+          }
+  
+          &.register-btn {
+            background: #e74c3c;
+  
+            &:hover {
+              background: #c0392b;
+            }
+          }
+        }
+      }
+  
+      .mobile-menu-icon {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      align-items: flex-start;
+  
+      nav {
+        display: none;
+        width: 100%;
+      }
+  
+      nav.open {
+        margin-bottom: 20px;
+      }
+  
+      .auth-buttons {
+        margin-top: 10px;
+        width: 100%;
+  
+        span {
+          margin-left: 0;
+          margin-top: 10px;
+          display: inline-block;
+          width: calc(50% - 10px);
+          text-align: center;
+  
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+  
+      .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+    }
+  }
+  
+  
+  
+  

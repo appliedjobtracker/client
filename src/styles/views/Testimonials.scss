@@ -1,0 +1,51 @@
+.testimonials {
+    padding: 60px 0;
+    background: #f0f0f0; /* Modify this background color to a lighter grey */
+    color: #333; /* Dark text color for better contrast */
+    text-align: center;
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+  
+      h2 {
+        margin-bottom: 40px;
+        font-size: 36px;
+      }
+  
+      .testimonials-grid {
+        display: flex;
+        flex-direction: column;
+  
+        .testimonial {
+          margin-bottom: 20px;
+  
+          p {
+            font-size: 18px;
+            font-style: italic;
+          }
+  
+          h4 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials .container h2 {
+      font-size: 28px;
+    }
+  
+    .testimonials .container .testimonials-grid .testimonial p {
+      font-size: 16px;
+    }
+  
+    .testimonials .container .testimonials-grid .testimonial h4 {
+      font-size: 14px;
+    }
+  }
+  
